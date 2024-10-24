@@ -11,22 +11,23 @@ function getBpm() {
 }
 
 // Main function
+// update to 
 function main() {
     alert("Welcome to the BPM Calculator!"); // Display welcome message
 
     const bpm = getBpm(); // Get BPM from user input
-    const msPerBeat = calculateMsPerBeat(bpm); // Calculate milliseconds per beat
+    const msPerFullBeat = calculateMsPerBeat(bpm); // Calculate milliseconds per beat
     const msPerHalfBeat = msPerBeat / 2;
     const msPerQuarterBeat = msPerBeat / 4;
     const msPerEighthBeat = msPerBeat / 8;
     const msPerSixteenthBeat = msPerBeat / 16;
 
     // Display the results
-    alert(`${msPerBeat.toFixed(2)} milliseconds per beat at ${bpm} BPM.\n` +
-          `${msPerHalfBeat.toFixed(2)} milliseconds per half beat at ${bpm} BPM.\n` +
-          `${msPerQuarterBeat.toFixed(2)} milliseconds per quarter beat at ${bpm} BPM.\n` +
-          `${msPerEighthBeat.toFixed(2)} milliseconds per eighth beat at ${bpm} BPM.\n` +
-          `${msPerSixteenthBeat.toFixed(2)} milliseconds per sixteenth beat at ${bpm} BPM.`);
+    alert(`${msPerBeat.toFixed(2)} milliseconds per full note at ${bpm} BPM.\n` +
+          `${msPerHalfBeat.toFixed(2)} milliseconds per half note at ${bpm} BPM.\n` +
+          `${msPerQuarterBeat.toFixed(2)} milliseconds per quarter note at ${bpm} BPM.\n` +
+          `${msPerEighthBeat.toFixed(2)} milliseconds per eighth note at ${bpm} BPM.\n` +
+          `${msPerSixteenthBeat.toFixed(2)} milliseconds per sixteenth note at ${bpm} BPM.`);
 }
 
 // Execute the main function
