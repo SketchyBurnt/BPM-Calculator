@@ -23,11 +23,11 @@ function main() {
     const msPerSixteenthBeat = msPerBeat / 16;
 
     // Display the results
-    alert(`${msPerBeat.toFixed(2)} milliseconds per full note at ${bpm} BPM.\n` +
-          `${msPerHalfBeat.toFixed(2)} milliseconds per half note at ${bpm} BPM.\n` +
-          `${msPerQuarterBeat.toFixed(2)} milliseconds per quarter note at ${bpm} BPM.\n` +
-          `${msPerEighthBeat.toFixed(2)} milliseconds per eighth note at ${bpm} BPM.\n` +
-          `${msPerSixteenthBeat.toFixed(2)} milliseconds per sixteenth note at ${bpm} BPM.`);
+    alert(`${msPerBeat.toFixed(2)} milliseconds per beat at ${bpm} BPM.\n` +
+          `${msPerHalfBeat.toFixed(2)} milliseconds per half beat at ${bpm} BPM.\n` +
+          `${msPerQuarterBeat.toFixed(2)} milliseconds per quarter beat at ${bpm} BPM.\n` +
+          `${msPerEighthBeat.toFixed(2)} milliseconds per eighth beat at ${bpm} BPM.\n` +
+          `${msPerSixteenthBeat.toFixed(2)} milliseconds per sixteenth beat at ${bpm} BPM.`);
 }
 
 // Execute the main function
